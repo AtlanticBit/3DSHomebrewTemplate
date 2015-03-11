@@ -62,7 +62,7 @@ LDFLAGS	=	-specs=3dsx.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 LIBS	:= -lctru -lm
 LIBDIRS	:= $(CTRULIB) ./lib
 ifeq ($(NO_CTRCOMMON),)
-	LIBS	:= -lctrcommon -lctru -lm
+	LIBS	:= -lctru -lm
 	LIBDIRS	:= $(DEVKITPRO)/ctrcommon $(CTRULIB) ./lib
 endif
 
